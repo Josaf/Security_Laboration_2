@@ -1,4 +1,4 @@
-/*public class Main{
+public class Main{
 	private static String testLengthString;
 	private static String[] testPassword;
 	private static long start;
@@ -55,21 +55,13 @@
 						start = System.currentTimeMillis();
 						s.verifyPassword(inString);
 						end = System.currentTimeMillis();
+
 						elapsedTime = end - start;
 						System.out.println("The code " + inString + " took " + elapsedTime + "ms (j=" + j + ")");
-						if(elapsedTime >= 10*(i+1)){
+						if(elapsedTime >= 10*(i+1)){		//if character is correct, break the loop
 							break;
-						}
-						testPassword[i] = integers[j];
-						/*if((elapsedTime <= 10*i) && (i != 0)){
-							testPassword[i] = integers[j];
-
-						}
-						else if (elapsedTime <= 10) {        //if first character is incorrect
-							testPassword[i] = integers[j];
-						}
-						else
-							break;*//*
+						}else
+						testPassword[i] = integers[j];	//go
 					}
 				}
 				break;
@@ -80,4 +72,4 @@
 
 		//return testPassword;
 	}
-}*/
+}
